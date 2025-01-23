@@ -1,0 +1,13 @@
+#Find the nth term 3,5,33,35,53,..........................
+if n <= len(s):
+    print("The nth term is:", s[n-1])
+else:
+    small_diff = 2
+    large_diff = 28
+    for i in range(len(s), n):
+        if i % 2 == 0:  
+            s.append(s[i-1] + large_diff)
+            large_diff -= 10  
+        else:  # Odd index terms, small difference
+            s.append(s[i-1] + small_diff)
+    print("The nth term is:", s[n-1])
