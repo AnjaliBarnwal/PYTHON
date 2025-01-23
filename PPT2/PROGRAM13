@@ -1,0 +1,16 @@
+#Find the nth term 1,1,2,6,24,....................................
+#Code:
+n = int(input("Enter the value of n: "))
+term1 = 1
+term2 = 1
+if n == 1:
+    result = term1
+elif n == 2:
+    result = term2
+else:
+     for i in range(3, n + 1):
+                     next_term = (i - 1) * term2
+term1 = term2
+term2 = next_term
+result = term2
+print("The", n, "th term of the series is:", result)
