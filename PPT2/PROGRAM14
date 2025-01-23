@@ -1,0 +1,4 @@
+#Find the nth term 14,28,20,40,..................................
+n=int(input("Enter the limit: "))
+for i in range(14,n,6):
+ print(i,",",i*2)
