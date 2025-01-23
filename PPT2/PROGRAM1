@@ -1,0 +1,7 @@
+#1!+2!+3!+.........+n!
+import math
+n = int(input("Enter the nth term:"))
+total = 0
+for i in range(0,n+1):
+    total +=math.factorial(i)
+print(total)
