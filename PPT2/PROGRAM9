@@ -1,0 +1,13 @@
+#1+2+11+26+47+.....................................................
+n =int(input("Enter the nth term:"))
+total=0
+term = 1
+for i in range(n):
+    if i == 0 or i == 1:
+        total = total + term + i
+        term += 1
+    else:
+        term += 3 * (2 * i - 1)
+        total += term
+
+print("The sum of the series is:", total)
